@@ -1,0 +1,64 @@
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    text-align: center;
+  }
+
+
+  .contact-us h2 {
+    margin-bottom: 20px;
+  }
+  
+.dark form textarea, .dark form input {
+  background-color: #4e4e4e;
+}
+.light form textarea, .light form input {
+  background-color: #a5a5a5;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.profiles-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+  
+  .profile-card {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .profile-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact-us {
+      max-width: 100%;
+    }
+    .profiles-section {
+      flex-direction: column;
+      align-items: center;
+      max-width: 100%;
+    }
+    .profile-card img {
+      max-width: 80px;
+    }
+  }
